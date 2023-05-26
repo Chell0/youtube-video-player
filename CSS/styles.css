@@ -1,0 +1,29 @@
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+}
+
+/* main */
+main {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* sidebar */
+aside {
+    background-color: #ddd;
+    padding: 10px;
+    width: 25%;
+    float: right;
+}
