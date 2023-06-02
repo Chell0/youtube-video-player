@@ -1,29 +1,164 @@
 /* body */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+	font-family: SF Mono, sans-serif;
+	font-style: 16px;
 }
 
 /* navigation */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    height: 50px;
+.navbar {
+	display: flex;
+	border-bottom: 1px solid #888;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar > div {
+	flex-basis: 200px;
+	align-content: center;
+}
+
+.navbar > .menu {
+	flex-basis: 0;
+	margin-right: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.navbar > .menu:hover {
+	background-color: #faf7f7e6;
+	border-radius: 30px;
+}
+
+.navbar > .logo {
+	flex-basis: 200px;
+	justify-content: flex-start;
+}
+
+.navbar > .logo > div > .fa-youtube {
+	color: #fb141a;
+}
+
+.navbar > .logo > div > span {
+	font-family: "Oswald", sans-serif;
+	font-size: 1.3rem;
+	font-weight: 500;
+	letter-spacing: -1px;
+	padding-left: 2px;
+}
+
+.navbar > .search-box {
+	position: relative;
+	display: flex;
+	flex-basis: 200px;
+	flex-grow: 1;
+	height: 45px;
+}
+
+.navbar > .search-box > input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	padding: 10px 20px;
+	border: 1px solid #888;
+	border-radius: 30px;
+	font-size: 18px;
+}
+
+.navbar > .search-box > .search_icon {
+	position: absolute;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	cursor: pointer;
+	border-left: 1px solid #888;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+}
+
+.navbar > .search-box > .search_icon:hover {
+	background-color: #faf7f7e6;
+}
+
+.navbar > .search-box > .search_icon > .fa-magnifying-glass {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.navbar > .mic {
+	flex-basis: 0;
+	margin: 10px;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.navbar > .mic:hover {
+	background-color: #faf7f7e6;
+	border-radius: 30px;
+	border: none;
+}
+
+.navbar > .mic > .fa-microphone {
+	color: #111;
+}
+
+.navbar > .settings {
+	flex-basis: 0;
+	margin-left: 60px;
+	margin-right: 10px;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px;
+}
+
+.navbar > .settings:hover {
+	background-color: #faf7f7e6;
+}
+
+.navbar > .user_profile {
+	flex-basis: auto;
+	padding: 15px;
+	border-radius: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.navbar > .user_profile:hover {
+	border: none;
+	background-color: #faf7f7e6;
+}
+
+.navbar > .user_profile > div > span {
+	margin-left: 10px;
+	font-style: 1rem;
 }
 
 /* main */
 main {
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 70%;
-    margin: 0 auto;
+	background-color: #f1f1f1;
+	padding: 20px;
+	width: 70%;
+	margin: 0 auto;
 }
 
 /* sidebar */
 aside {
-    background-color: #ddd;
-    padding: 10px;
-    width: 25%;
-    float: right;
+	background-color: #ddd;
+	padding: 10px;
+	width: 25%;
+	float: right;
 }
