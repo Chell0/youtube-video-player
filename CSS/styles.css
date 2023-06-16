@@ -8,12 +8,15 @@
 body {
 	font-family: SF Mono, sans-serif;
 	font-style: 16px;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 /* navigation */
 .navbar {
 	display: flex;
-	border-bottom: 1px solid #888;
+	margin-bottom: 10px;
 	justify-content: center;
 	align-items: center;
 }
@@ -148,16 +151,33 @@ body {
 }
 
 /* main */
-main {
-	background-color: #f1f1f1;
-	padding: 20px;
-	width: 70%;
-	margin: 0 auto;
+.main {
+	display: flex;
+	flex: 1;
+}
+
+.main > main {
+	padding: 0 2em;
+	flex: 5 5 300px;
+}
+
+/* Embeded Video */
+.main > main > .video-container {
+	position: relative;
+	/* width: 100%; */
+	/* height: 100%; */
+}
+
+.main > main > .video-container > iframe {
+	position: absolute;
+	/* top: 0; */
+	/* left: 0; */
+	width: 1200px;
+	height: 800px;
 }
 
 /* sidebar */
 aside {
-	background-color: #ddd;
 	padding: 10px;
 	width: 25%;
 	float: right;
